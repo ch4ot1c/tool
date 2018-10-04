@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-#export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 
 # Begin Antigen Installation
@@ -12,12 +12,15 @@ source $HOME/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle <<EOBUNDLES
-    # Unqualified are bundles from the default repo (robbyrussell's oh-my-zsh)
+
+# (Unqualified are bundles from the default repo (robbyrussell's oh-my-zsh))
     git
+    git-auto-fetch
     git-extras
     github
     gitignore
     rapgenic/zsh-git-complete-urls
+    mroth/git-prompt-useremail
     caarlos0/git-add-remote
     caarlos0/open-pr
     zdharma/zsh-diff-so-fancy
@@ -129,33 +132,8 @@ antigen apply
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  k # git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
-  zed # 
-  vim-plugin
-  git
-  git-prompt-useremail
-  git-add-remote
-  git-complete-urls
-  gitignore
-  appup
-  docker
-  docker-zsh-completion
-  node
-  nvm
-  nvm-auto-use
-  dotenv
-  ssh
-  ec2ssh
-  gpg-agent
-  gpg-crypthistory-sync
-  tmuxdiff-so-fancyopen-pr
-  async
-  calc
-  colored-man-pages
-  zsh-completionscommand-not-foundyou-should-use
-  autoupdate-oh-my-zsh-plugins
-)
+#plugins=(
+#)
 
 #source $ZSH/oh-my-zsh.sh
 
