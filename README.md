@@ -2,5 +2,5 @@
 
 My:
 
+- `.zshrc` (uses Antigen)
 - `.vimrc`
-
